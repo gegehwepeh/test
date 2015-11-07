@@ -9,9 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
-
+    <title>Tolongin Dong</title>
     <!-- Bootstrap Core CSS -->
+    <script src="js/bundle.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
     <!-- Custom Fonts -->
@@ -24,7 +24,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
-
+    <link rel="stylesheet" href="css/advance-dropdown-search.css" type="text/css">
+    <link rel="stylesheet" href="css/template.css" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -46,14 +47,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">MintaTolong.Com</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about">Search</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#services">Services</a>
@@ -74,10 +75,56 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Your Favorite Source of Free Bootstrap Themes</h1>
+                <h1>Cari dan temukan segala macam jasa yang kamu butuhkan</h1>
                 <hr>
-                <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                <p>Cari dan pilih sendiri sesuai dengan kebutuhan kamu. Baca profil nya dan pastikan dialah yang paling tepat untuk menolong mu </p>
+              	<div class="row">
+              		<div class="col-md-12">
+                          <div class="input-group" id="adv-search">
+                              <input type="text" class="form-control" placeholder="Ketik disini untuk mencari" />
+                              <div class="input-group-btn">
+                                  <div class="btn-group" role="group">
+                                      <div class="dropdown dropdown-lg">
+                                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                          <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                              <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                  <label for="filter">Kategori</label>
+                                                  <select class="form-control">
+                                                      <option value="0" selected>Kategori</option>
+                                                      <option value="1">Featured</option>
+                                                      <option value="2">Most Popular</option>
+                                                      <option value="3">Top Rated</option>
+                                                      <option value="4">Most Commented</option>
+                                                  </select>
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="filter">Daerah</label>
+                                                  <select class="form-control">
+                                                      <option value="0" selected>Daerah</option>
+                                                      <option value="1">Featured</option>
+                                                      <option value="2">Most Popular</option>
+                                                      <option value="3">Top Rated</option>
+                                                      <option value="4">Most Commented</option>
+                                                  </select>
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="contain">Pencarian</label>
+                                                  <input class="form-control" type="text" />
+                                                </div>
+                                                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                              </form>
+                                          </div>
+                                      </div>
+                                      <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+              	</div>
+              </div>
+              </div>
             </div>
         </div>
     </header>
@@ -263,7 +310,6 @@
             </div>
         </div>
     </section>
-    <script src="js/bundle.js"></script>
 </body>
 
 </html>

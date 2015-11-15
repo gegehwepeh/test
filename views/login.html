@@ -49,9 +49,51 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">MintaTolong.com</a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <div class="col-md-6">
+              <div class="input-group float-right margin-top-10" id="adv-search">
+                  <input type="text" class="form-control" placeholder="Ketik disini untuk mencari" />
+                  <div class="input-group-btn">
+                      <div class="btn-group" role="group">
+                          <div class="dropdown dropdown-lg">
+                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" title = "Pencarian lebih lanjut" aria-expanded="false"><span class="caret"></span></button>
+                              <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                  <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                      <label for="filter">Kategori</label>
+                                      <select class="form-control">
+                                          <option value="0" selected>Kategori</option>
+                                          <option value="1">Featured</option>
+                                          <option value="2">Most Popular</option>
+                                          <option value="3">Top Rated</option>
+                                          <option value="4">Most Commented</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="filter">Daerah</label>
+                                      <select class="form-control">
+                                          <option value="0" selected>Daerah</option>
+                                          <option value="1">Featured</option>
+                                          <option value="2">Most Popular</option>
+                                          <option value="3">Top Rated</option>
+                                          <option value="4">Most Commented</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="contain">Pencarian</label>
+                                      <input class="form-control" type="text" />
+                                    </div>
+                                    <button type="submit" class="btn btn-primary float-right"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                  </form>
+                              </div>
+                          </div>
+                          <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4" >
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a class="page-scroll" href="#!">Masuk</a>
@@ -70,6 +112,7 @@
                     </li>
                 </ul>
             </div>
+          </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
@@ -88,15 +131,15 @@
                   <div class="col-md-7 login-left-border">
                     <form class="form-horizontal">
                       <fieldset>
-                        <input id="textinput" name="username" type="text" placeholder="Enter User Name" class="form-control input-md">
-                        <input id="textinput" name="password" type="password" placeholder="Enter Password" class="form-control input-md margin-top-10">
+                        <input id="textinput" name="username" type="text" placeholder="Email" class="form-control input-md">
+                        <input id="textinput" name="password" type="password" placeholder="Password" class="form-control input-md margin-top-10">
                         <div class="row spacing margin-left-1">
                           <input class = "float-left" type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-                          <small class ="float-left margin-top-3 margin-left-5"> Remember me
+                          <small class ="float-left margin-top-3 margin-left-5"> Ingat Saya
                           </small>
                         </div>
-                        <div class="row spacing margin-left-1"><a class = "float-left" href="#"><small> Forgot Password?</small></a><br/></div>
-                        <input type="submit" id="singlebutton" name="singlebutton"class="btn btn-primary btn-sm pull-right" value = "Sign In"></button>
+                        <div class="row spacing margin-left-1"><a class = "float-left" href="#"><small> Lupa Password?</small></a><br/></div>
+                        <input type="submit" id="singlebutton" name="singlebutton"class="btn btn-primary btn-sm pull-right" value = "Masuk"></button>
                       </fieldset>
                     </form>
                 </div>

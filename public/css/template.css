@@ -22,6 +22,10 @@
     margin-top: 30px !important;
 }
 
+.margin-top-60
+{
+    margin-top: 60px !important;
+}
 
 .margin-top-m30
 {
@@ -48,6 +52,10 @@
     margin-left: 5px !important;
 }
 
+.margin-right-40{
+    margin-right: 40px !important;
+}
+
 .float-left
 {
     float: left !important;
@@ -72,13 +80,6 @@
     padding: 100px 0px 0px 0px !important;
 }
 
-.footer {
-   position:absolute;
-   bottom:0;
-   width:100%;
-}
-
-
 .spacing {
 	padding-top:7px;
 	padding-bottom:7px;
@@ -100,7 +101,7 @@
 }
 
 .login-left-border{
-  border-left:2px solid #f05f40;height:160px;
+  border-left:2px solid #f05f40;height:170px;
 }
 
 .sign-up-box{
@@ -111,4 +112,28 @@
 
 .display-inline{
   	display: inline !important;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.middle-content{
+  position: relative !important;
+  top: 50% !important;
+  height: 150px !important;
+}
+
+.height-200{
+  height: 200px !important;
+}
+
+.height-350{
+  height: 350px !important;
+}
+
+.text-align-right{
+  text-align: right !important;
 }

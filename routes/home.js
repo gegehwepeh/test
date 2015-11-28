@@ -39,6 +39,11 @@ module.exports = function(app, passport){
 		res.render('signup');
 	});
 
+	app.get('/info', function(req, res) {
+	// render the page and pass in any flash data if it exists
+	res.render('info');
+});
+
 	// process the signup form
 	app.post('/signup', passport.authenticate('local-signup', {
 		successRedirect : '/', // redirect to the secure profile section

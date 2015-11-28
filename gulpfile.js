@@ -10,10 +10,14 @@ gulp.task('vendor', function() {
   return gulp.src([
     'public/js/jquery.js',
     'public/js/bootstrap.min.js',
+    'public/js/evenfly.js',
+    'public/js/jquery.nicescroll.min.js',
     'public/js/jquery.easing.min.js',
     'public/js/jquery.fittext.js',
     'public/js/wow.min.js',
-    'public/js/creative.js'
+    'public/js/creative.js',
+    'public/js/jssor.slider.mini.js',
+    'public/js/star-rating.min.js',
   ]).pipe(concat('bundle.js'))
     .pipe(gulp.dest('public/js'));
 });

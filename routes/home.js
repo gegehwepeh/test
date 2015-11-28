@@ -2,17 +2,15 @@
  * GET /
  * Home page.
  */
-var mysql = require('mysql')
-var db = require('../configs/db');
-var connection = mysql.createConnection(db.connection);
-connection.connect();
+var connection = require('../configs/db');
+
 module.exports = function(app, passport){
 	app.get('/', function(req, res){
 		res.render('home');
 	});
 	app.get('/test', function(req, res){
-		connection.query('SELECT * FROM tbl_user WHERE id = ?', [61], function(err, results) {
-  			res.sendStatus(results[0].id);
+		connection.query('SELECT * FROM tbl_user WHERE id = ?', [1], function(err, results) {
+  			res.send(results[0].id);
 		});
 	});
 	app.get('/login', function(req, res) {

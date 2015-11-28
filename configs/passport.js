@@ -1,9 +1,8 @@
 var LocalStrategy = require('passport-local').Strategy;
 var mysql = require('mysql');
 var bcrypt = require('bcrypt-nodejs');
-var dbConfig = require('./db');
-var connection = mysql.createConnection(dbConfig.connection);
-connection.connect();
+var connection = require('./db');
+
 module.exports = function(passport){
 	// Passport session setup
 	// required for persistent login sessions
@@ -28,6 +27,7 @@ module.exports = function(passport){
                     return done(err);
                 if (rows.length) {
                     return done(null, false, req.flash('signupMessage', 'That username is already taken.'));
+                    //return done(null, false, res.status(400));
                 } else {
                 	var newUserMysql = {
                         username: username,

@@ -52,6 +52,11 @@
     margin-left: 5px !important;
 }
 
+.margin-left-60
+{
+    margin-left: 60px !important;
+}
+
 .margin-right-20{
     margin-right: 20px !important;
 }
@@ -162,6 +167,14 @@
   text-align: left !important;
 }
 
+.text-align-center{
+  text-align: center; !important;
+}
+
 .secicon{
   margin-right: 20px !important;
+}
+
+.min-height{
+  min-height: 555px !important;
 }

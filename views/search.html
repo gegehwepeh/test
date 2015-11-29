@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PakJup.com</title>
+    <!-- Bootstrap Core CSS -->
+    <script src="js/bundle.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" href="css/advance-dropdown-search.css" type="text/css">
+    <link rel="stylesheet" href="css/template.css" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<style>
+        #sidebar {
+        	float:right;
+        	width:240px;
+        }
+      	#sidebar #widget {
+      		width:240px;
+      	}
+
+</style>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="/">PakJup.com</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <div class="col-md-7">
+              <div class="input-group float-right margin-top-10" id="adv-search">
+                  <input type="text" class="form-control" placeholder="Ketik disini untuk mencari" />
+                  <div class="input-group-btn">
+                      <div class="btn-group" role="group">
+                          <div class="dropdown dropdown-lg">
+                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" title = "Pencarian lebih lanjut" aria-expanded="false"><span class="caret"></span></button>
+                              <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                  <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                      <label for="filter">Kategori</label>
+                                      <select class="form-control">
+                                          <option value="0" selected>Kategori</option>
+                                          <option value="1">Featured</option>
+                                          <option value="2">Most Popular</option>
+                                          <option value="3">Top Rated</option>
+                                          <option value="4">Most Commented</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="filter">Daerah</label>
+                                      <select class="form-control">
+                                          <option value="0" selected>Daerah</option>
+                                          <option value="1">Featured</option>
+                                          <option value="2">Most Popular</option>
+                                          <option value="3">Top Rated</option>
+                                          <option value="4">Most Commented</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="contain">Pencarian</label>
+                                      <input class="form-control" type="text" />
+                                    </div>
+                                    <button type="submit" class="btn btn-primary float-right"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                  </form>
+                              </div>
+                          </div>
+                          <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="/login">Masuk</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/signup">Daftar</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/info">Info</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class = "margin-top-60">
+        <div class="container-fluid bg-3 text-center">
+          <div id="sidebar">
+              <div id="widget" class = "sticky">
+                <div class="form-group">
+                 <select class="form-control" id="sel1">
+                   <option>Sort By</option>
+                   <option>Nama A-Z</option>
+                   <option>Nama Z-A</option>
+                   <option>Daerah A-Z</option>
+                   <option>Daerah Z-A</option>
+                   <option>Tanggal Bergabung Awal</option>
+                   <option>Tanggal Bergabung Terbaru</option>
+                 </select>
+               </div>
+              </div>
+          </div>
+          <div class = "min-height text-align-left">
+            <h1 class = "margin-left-60">Hasil Pencarian</h1>
+            <div class="row">
+              <div class="container">
+                <div class="col-md-3 padding-0">
+          				<h3><a href="#" title="">Andreas Saputra</a></h3>
+                  Bogor, Jawa Barat<br>
+                  <i class="glyphicon glyphicon-calendar"></i> <span>Mulai bergabung sejak 02/15/2014</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Fotografer</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Wedding Organizer</span><br>
+                  +4 keahlian
+          			</div>
+          			<div class="col-md-6">
+          				<h3>Voluptatem, exercitationem, suscipit, distinctio</h3>
+          				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>
+          			</div>
+              </div>
+          	</div>
+            <div class="row">
+              <div class="container">
+                <div class="col-md-3 padding-0">
+          				<h3><a href="#" title="">Andreas Saputra</a></h3>
+                  Bogor, Jawa Barat<br>
+                  <i class="glyphicon glyphicon-calendar"></i> <span>Mulai bergabung sejak 02/15/2014</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Fotografer</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Wedding Organizer</span><br>
+                  +4 keahlian
+          			</div>
+          			<div class="col-md-6">
+          				<h3>Voluptatem, exercitationem, suscipit, distinctio</h3>
+          				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>
+          			</div>
+              </div>
+          	</div>
+            <div class="row">
+              <div class="container">
+                <div class="col-md-3 padding-0">
+          				<h3><a href="#" title="">Andreas Saputra</a></h3>
+                  Bogor, Jawa Barat<br>
+                  <i class="glyphicon glyphicon-calendar"></i> <span>Mulai bergabung sejak 02/15/2014</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Fotografer</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Wedding Organizer</span><br>
+                  +4 keahlian
+          			</div>
+          			<div class="col-md-6">
+          				<h3>Voluptatem, exercitationem, suscipit, distinctio</h3>
+          				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>
+          			</div>
+              </div>
+          	</div>
+            <div class="row">
+              <div class="container">
+                <div class="col-md-3 padding-0">
+          				<h3><a href="#" title="">Andreas Saputra</a></h3>
+                  Bogor, Jawa Barat<br>
+                  <i class="glyphicon glyphicon-calendar"></i> <span>Mulai bergabung sejak 02/15/2014</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Fotografer</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Wedding Organizer</span><br>
+                  +4 keahlian
+          			</div>
+          			<div class="col-md-6">
+          				<h3>Voluptatem, exercitationem, suscipit, distinctio</h3>
+          				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>
+          			</div>
+              </div>
+          	</div>
+            <div class="row">
+              <div class="container">
+                <div class="col-md-3 padding-0">
+          				<h3><a href="#" title="">Andreas Saputra</a></h3>
+                  Bogor, Jawa Barat<br>
+                  <i class="glyphicon glyphicon-calendar"></i> <span>Mulai bergabung sejak 02/15/2014</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Fotografer</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Wedding Organizer</span><br>
+                  +4 keahlian
+          			</div>
+          			<div class="col-md-6">
+          				<h3>Voluptatem, exercitationem, suscipit, distinctio</h3>
+          				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>
+          			</div>
+              </div>
+          	</div>
+            <div class="row">
+              <div class="container">
+                <div class="col-md-3 padding-0">
+          				<h3><a href="#" title="">Andreas Saputra</a></h3>
+                  Bogor, Jawa Barat<br>
+                  <i class="glyphicon glyphicon-calendar"></i> <span>Mulai bergabung sejak 02/15/2014</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Fotografer</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Wedding Organizer</span><br>
+                  +4 keahlian
+          			</div>
+          			<div class="col-md-6">
+          				<h3>Voluptatem, exercitationem, suscipit, distinctio</h3>
+          				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>
+          			</div>
+              </div>
+          	</div>
+            <div class="row">
+              <div class="container">
+                <div class="col-md-3 padding-0">
+          				<h3><a href="#" title="">Andreas Saputra</a></h3>
+                  Bogor, Jawa Barat<br>
+                  <i class="glyphicon glyphicon-calendar"></i> <span>Mulai bergabung sejak 02/15/2014</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Fotografer</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Wedding Organizer</span><br>
+                  +4 keahlian
+          			</div>
+          			<div class="col-md-6">
+          				<h3>Voluptatem, exercitationem, suscipit, distinctio</h3>
+          				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>
+          			</div>
+              </div>
+          	</div>
+            <div class="row">
+              <div class="container">
+                <div class="col-md-3 padding-0">
+          				<h3><a href="#" title="">Andreas Saputra</a></h3>
+                  Bogor, Jawa Barat<br>
+                  <i class="glyphicon glyphicon-calendar"></i> <span>Mulai bergabung sejak 02/15/2014</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Fotografer</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Wedding Organizer</span><br>
+                  +4 keahlian
+          			</div>
+          			<div class="col-md-6">
+          				<h3>Voluptatem, exercitationem, suscipit, distinctio</h3>
+          				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>
+          			</div>
+              </div>
+          	</div>
+            <div class="row">
+              <div class="container">
+                <div class="col-md-3 padding-0">
+          				<h3><a href="#" title="">Andreas Saputra</a></h3>
+                  Bogor, Jawa Barat<br>
+                  <i class="glyphicon glyphicon-calendar"></i> <span>Mulai bergabung sejak 02/15/2014</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Fotografer</span><br>
+                  <i class="glyphicon glyphicon-tags"></i> <span>Wedding Organizer</span><br>
+                  +4 keahlian
+          			</div>
+          			<div class="col-md-6">
+          				<h3>Voluptatem, exercitationem, suscipit, distinctio</h3>
+          				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>
+          			</div>
+              </div>
+          	</div>
+            <div class = "row text-align-center">
+              <ul class="pagination">
+                 <li class="active"><a href="#">1</a></li>
+                 <li><a href="#">2</a></li>
+                 <li><a href="#">3</a></li>
+                 <li><a href="#">4</a></li>
+                 <li><a href="#">5</a></li>
+              </ul>
+            </div>
+            <div class="row bg-dark footer">
+                <div class="container">
+                  <div class ="row text-align-left">
+                    <div class="float-left">
+                      <p>PakJup.com</p>
+                      <p>Hak cipta © 2015-2016 PakJup.com</p>
+                    </div>
+                    <div class="float-right">
+                        <h2 class="section-heading">Butuh bantuan?</h2>
+                        <p>Email kami ke <a href="mailto:your-email@your-domain.com">asdf@asdf.com</a></p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    jQuery(document).ready(function ($) {
+      if (!!$('.sticky').offset()) { // make sure ".sticky" element exists
+          var stickyTop = $('.sticky').offset().top; // returns number
+          $(window).scroll(function(){ // scroll event
+            var windowTop = $(window).scrollTop(); // returns number
+            if (stickyTop < windowTop){
+              $('.sticky').css({ position: 'fixed', top: 60 });
+            }
+            else {
+              $('.sticky').css('position','static');
+            }
+          });
+        }
+      });
+</script>

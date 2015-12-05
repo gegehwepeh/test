@@ -7,8 +7,8 @@
 html,
 body {
     width: 100%;
-    background-color: #006699;
-    color : #FFFAFA;
+    background-color: #FFFFFF;
+    color : #000000;
 }
 
 body {
@@ -57,8 +57,10 @@ p {
 }
 
 .bg-dark {
+
     color: #fff;
-    background-color: #222;
+    background-image: url("/img/orange_ok.jpg");
+    background-size: 100% 100%;
 }
 
 .text-faded {
@@ -80,8 +82,9 @@ aside {
 .navbar-default {
     border-color: rgba(34,34,34,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    color: #f05f40;
-    background-color: #222;
+    color: #000000;
+    background-image: url("/img/orange_ok.jpg");
+    background-size: 100% auto;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -91,12 +94,12 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #f05f40;
+    color: #000000;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #000000;
 }
 
 .navbar-default .nav > li>a,

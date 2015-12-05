@@ -1,0 +1,53 @@
+.circular-menu {
+  width: 250px;
+  height: 250px;
+  margin-top: -100px;
+}
+
+.circle {
+  width: 400px;
+  height: 400px;
+  opacity: 0;
+
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -transform: scale(0);
+
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  margin-left: -30px;
+}
+
+.open.circle {
+  opacity: 1;
+
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -transform: scale(1);
+  z-index: 999;
+}
+
+.circle a {
+  text-decoration: none;
+  display: block;
+  height: 80px;
+  width: 80px;
+  line-height: 40px;
+  margin-left: -50px;
+  margin-top: -20px;
+  position: absolute;
+  text-align: center;
+}
+
+.menu-button {
+  position: absolute;
+  top: calc(30% - 27px);
+  left: calc(50% - 27px);
+  text-align: center;
+  height: 170px;
+  width: 170px;
+  line-height: 40px;
+  padding: 10px;
+  margin-left: -50px;
+}

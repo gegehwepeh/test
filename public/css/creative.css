@@ -8,7 +8,7 @@ html,
 body {
     width: 100%;
     background-color: #FFFFFF;
-    color : #000000;
+    color : black;
 }
 
 body {
@@ -26,7 +26,7 @@ hr.light {
 }
 
 a {
-    color: #f05f40;
+    color: #4B0082 !important;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -34,7 +34,8 @@ a {
 
 a:hover,
 a:focus {
-    color: #eb3812;
+    color: #9200ff !important;
+    outline: 0 !important;
 }
 
 h1,
@@ -58,7 +59,7 @@ p {
 
 .bg-dark {
 
-    color: #fff;
+    color: black;
     background-image: url("/img/orange_ok.jpg");
     background-size: 100% 100%;
 }
@@ -82,7 +83,7 @@ aside {
 .navbar-default {
     border-color: rgba(34,34,34,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    color: #000000;
+    color: black;
     background-image: url("/img/orange_ok.jpg");
     background-size: 100% auto;
     -webkit-transition: all .35s;
@@ -94,12 +95,12 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #000000;
+    color: black;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #000000;
+    color: black;
 }
 
 .navbar-default .nav > li>a,
@@ -107,17 +108,17 @@ aside {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    color: #222;
+    color: black;
 }
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #f05f40;
+    color: black;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #f05f40!important;
+    color: black !important;
 }
 
 .navbar-default .nav > li.active>a:hover,
@@ -180,7 +181,7 @@ header {
     width: 100%;
     min-height: auto;
     text-align: center;
-    color: #fff;
+    color: black;
     background-color: #006699;
     background-position: center;
     -webkit-background-size: cover;

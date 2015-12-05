@@ -27,6 +27,16 @@
     margin-top: 60px !important;
 }
 
+.margin-top-80
+{
+    margin-top: 80px !important;
+}
+
+.margin-top-100
+{
+    margin-top: 100px !important;
+}
+
 .margin-top-m30
 {
     margin-top: 30px !important;
@@ -63,6 +73,11 @@
 
 .margin-right-40{
     margin-right: 40px !important;
+}
+
+.margin-bottom-200
+{
+    margin-bottom: 180px !important;
 }
 
 .float-left

@@ -190,12 +190,63 @@
 
         #sidebar {
         	float:right;
-        	width:240px;
+        	width:190px;
         }
       	#sidebar #widget {
-      		width:240px;
+      		width:190px;
       	}
 
+        .panel.with-nav-tabs .panel-heading{
+            padding: 5px 5px 0 5px;
+        }
+        .panel.with-nav-tabs .panel-heading .panel-title{
+            padding: 10px;
+        }
+        .panel.with-nav-tabs .nav-tabs{
+        	border-bottom: none;
+        }
+        .panel.with-nav-tabs .nav-justified{
+        	margin-bottom: -1px;
+        }
+        .with-nav-tabs.panel-success .nav-tabs > li > a,
+        .with-nav-tabs.panel-success .nav-tabs > li > a:hover,
+        .with-nav-tabs.panel-success .nav-tabs > li > a:focus {
+        	color: #3c763d;
+        }
+        .with-nav-tabs.panel-success .nav-tabs > .open > a,
+        .with-nav-tabs.panel-success .nav-tabs > .open > a:hover,
+        .with-nav-tabs.panel-success .nav-tabs > .open > a:focus,
+        .with-nav-tabs.panel-success .nav-tabs > li > a:hover,
+        .with-nav-tabs.panel-success .nav-tabs > li > a:focus {
+        	color: #3c763d;
+        	background-color: #d6e9c6;
+        	border-color: transparent;
+        }
+        .with-nav-tabs.panel-success .nav-tabs > li.active > a,
+        .with-nav-tabs.panel-success .nav-tabs > li.active > a:hover,
+        .with-nav-tabs.panel-success .nav-tabs > li.active > a:focus {
+        	color: #3c763d;
+        	background-color: #fff;
+        	border-color: #d6e9c6;
+        	border-bottom-color: transparent;
+        }
+        .with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu {
+            background-color: #dff0d8;
+            border-color: #d6e9c6;
+        }
+        .with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > li > a {
+            color: #3c763d;
+        }
+        .with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+        .with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+            background-color: #d6e9c6;
+        }
+        .with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+        .with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+        .with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+            color: #fff;
+            background-color: #3c763d;
+        }
     </style>
 
 <body id="page-top">
@@ -277,7 +328,7 @@
         <div class="container-fluid bg-3 middle-content">
           <div id="sidebar">
               <div id="widget" class="sticky">
-              <a href="#" class ="btn btn-primary"><span class="glyphicon glyphicon-comment margin-right-20"></span>Kontak Langsung </a>
+              <a href="#" class ="btn btn-primary"><span class="glyphicon glyphicon-comment margin-right-10"></span>Kontak Langsung</a>
               </div>
           </div>
             <div class="row">
@@ -288,138 +339,141 @@
                 </div>
               </div>
             </div>
-            <div class="row">
-                <div class="container">
-                  <div class="col-sm-10">
-                      <h3><span class="secicon fa fa-user"></span> Kategori Jasa </h3>
-                      <div class="col-sm-4">
-                        <ul class="list-group">
-                           <li class="list-group-item list-group-item-info"><span class="badge">+12</span> Fotografer</li>
-                           <li class="list-group-item list-group-item-info"><span class="badge">+5</span> Web Designer</li>
-                           <li class="list-group-item list-group-item-info"><span class="badge">+3</span> Wedding Organizer</li>
-                        </ul>
+            <div class ="row">
+              <div class="container">
+                  <div class="col-sm-11">
+                    <div class="panel with-nav-tabs panel-success">
+                      <div class="panel-heading">
+                          <ul class="nav nav-tabs">
+                              <li class="active"><a href="#tab1success" data-toggle="tab">Fotografer</a></li>
+                              <li><a href="#tab2success" data-toggle="tab">Web Designer</a></li>
+                              <li><a href="#tab3success" data-toggle="tab">Wedding Organizer</a></li>
+                          </ul>
                       </div>
-                      <div class="col-sm-4">
-                        <ul class="list-group">
-                           <li class="list-group-item list-group-item-info"><span class="badge">+1</span> Event Organizer</li>
-                           <li class="list-group-item list-group-item-info"><span class="badge">+2</span> Konsultan Pajak</li>
-                           <li class="list-group-item list-group-item-info"><span class="badge">0</span> Guru Privat</li>
-                        </ul>
-                      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="row">
-                <div class="container">
-                  <div class="col-sm-10">
-                      <h3><span class="secicon fa fa-user"></span> Tentang Saya </h3>
-                      <p>Adipiscing elit. Nullam dapibus vehicula condimentum. Curabitur elit enim, accumsan vitae tristique ut, mollis at orci. Fusce cursus interdum neque nec aliquam. Proin turpis leo, laoreet non ultricies non, dictum nec nulla. Duis vitae nisi eu odio Adipiscing elit. Nullam dapibus vehicula condimentum. Curabitur elit enim, accumsan.</p>
+                      <div class="panel-body">
+                          <div class="tab-content">
+                              <div class="tab-pane fade in active" id="tab1success">
+                                <div class="row">
+                                    <div class="container">
+                                      <div class="col-sm-10">
+                                          <h3><span class="secicon fa fa-user"></span> Tentang Saya </h3>
+                                          <p>Adipiscing elit. Nullam dapibus vehicula condimentum. Curabitur elit enim, accumsan vitae tristique ut, mollis at orci. Fusce cursus interdum neque nec aliquam. Proin turpis leo, laoreet non ultricies non, dictum nec nulla. Duis vitae nisi eu odio Adipiscing elit. Nullam dapibus vehicula condimentum. Curabitur elit enim, accumsan.</p>
 
-                      <p>Consectetur adipisicing elit. Hic labore, unde, ratione, itaque ducimus provident error similique qui, recusandae nam dignissimos autem. Sequi quas quis non, odit assumenda similique neque.</p>
-                  </div>
-              </div>
-            </div>
-            <div class="row">
-                <div class="container">
-                  <div class="col-sm-12">
-                      <h3><span class="secicon fa fa-user"></span> Portfolio </h3>
-                      <div id="jssor_1" style="position: relative; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
-                        <!-- Loading Screen -->
-                        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-                            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-                            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-                        </div>
-                        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">
-                            <div data-p="144.50" style="display: none;">
-                                <img data-u="image" src="img/01.jpg" />
-                                <img data-u="thumb" src="img/thumb-01.jpg" />
-                            </div>
-                            <div data-p="144.50" style="display: none;">
-                                <img data-u="image" src="img/02.jpg" />
-                                <img data-u="thumb" src="img/thumb-02.jpg" />
-                            </div>
-                            <div data-p="144.50" style="display: none;">
-                                <img data-u="image" src="img/03.jpg" />
-                                <img data-u="thumb" src="img/thumb-03.jpg" />
-                            </div>
-                            <div data-p="144.50" style="display: none;">
-                                <img data-u="image" src="img/04.jpg" />
-                                <img data-u="thumb" src="img/thumb-04.jpg" />
-                            </div>
-                            <div data-p="144.50" style="display: none;">
-                                <img data-u="image" src="img/05.jpg" />
-                                <img data-u="thumb" src="img/thumb-05.jpg" />
-                            </div>
-                            <div data-p="144.50" style="display: none;">
-                                <img data-u="image" src="img/06.jpg" />
-                                <img data-u="thumb" src="img/thumb-06.jpg" />
-                            </div>
-                            <div data-p="144.50" style="display: none;">
-                                <img data-u="image" src="img/07.jpg" />
-                                <img data-u="thumb" src="img/thumb-07.jpg" />
-                            </div>
-                            <div data-p="144.50" style="display: none;">
-                                <img data-u="image" src="img/08.jpg" />
-                                <img data-u="thumb" src="img/thumb-08.jpg" />
-                            </div>
-                            <div data-p="144.50" style="display: none;">
-                                <img data-u="image" src="img/09.jpg" />
-                                <img data-u="thumb" src="img/thumb-09.jpg" />
-                            </div>
-                            <div data-p="144.50" style="display: none;">
-                                <img data-u="image" src="img/10.jpg" />
-                                <img data-u="thumb" src="img/thumb-10.jpg" />
-                            </div>
-                            <div data-p="144.50" style="display: none;">
-                                <img data-u="image" src="img/11.jpg" />
-                                <img data-u="thumb" src="img/thumb-11.jpg" />
-                            </div>
-                            <div data-p="144.50" style="display: none;">
-                                <img data-u="image" src="img/12.jpg" />
-                                <img data-u="thumb" src="img/thumb-12.jpg" />
-                            </div>
-                        </div>
-                        <!-- Thumbnail Navigator -->
-                        <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
-                            <!-- Thumbnail Item Skin Begin -->
-                            <div data-u="slides" style="cursor: default;">
-                                <div data-u="prototype" class="p">
-                                    <div class="w">
-                                        <div data-u="thumbnailtemplate" class="t"></div>
-                                    </div>
-                                    <div class="c"></div>
+                                          <p>Consectetur adipisicing elit. Hic labore, unde, ratione, itaque ducimus provident error similique qui, recusandae nam dignissimos autem. Sequi quas quis non, odit assumenda similique neque.</p>
+                                      </div>
+                                  </div>
                                 </div>
-                            </div>
-                            <!-- Thumbnail Item Skin End -->
-                        </div>
-                        <!-- Arrow Navigator -->
-                        <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>
-                        <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
-                    </div>
-                  </div>
-              </div>
-            </div>
-            <div class="row">
-                <div class="container">
-                  <div class="col-sm-10">
-                      <h3><span class="secicon fa fa-user"></span>Keterangan Lainnya</h3>
-                      <p>Nullam dapibus vehicula condimentum. Curabitur elit enim, accumsan vitae tristique ut, mollis at orci. Fusce cursus interdum neque nec aliquam. Proin turpis leo, laoreet non ultricies non, dictum nec nulla. Duis vitae nisi eu odio Adipiscing elit. Nullam dapibus vehicula condimentum. Curabitur elit enim, accumsan.</p>
+                                <div class="row">
+                                    <div class="container">
+                                      <div class="col-sm-12">
+                                          <h3><span class="secicon fa fa-user"></span> Portfolio </h3>
+                                          <div id="jssor_1" style="position: relative; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
+                                            <!-- Loading Screen -->
+                                            <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                                                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                                                <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                                            </div>
+                                            <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">
+                                                <div data-p="144.50" style="display: none;">
+                                                    <img data-u="image" src="img/01.jpg" />
+                                                    <img data-u="thumb" src="img/thumb-01.jpg" />
+                                                </div>
+                                                <div data-p="144.50" style="display: none;">
+                                                    <img data-u="image" src="img/02.jpg" />
+                                                    <img data-u="thumb" src="img/thumb-02.jpg" />
+                                                </div>
+                                                <div data-p="144.50" style="display: none;">
+                                                    <img data-u="image" src="img/03.jpg" />
+                                                    <img data-u="thumb" src="img/thumb-03.jpg" />
+                                                </div>
+                                                <div data-p="144.50" style="display: none;">
+                                                    <img data-u="image" src="img/04.jpg" />
+                                                    <img data-u="thumb" src="img/thumb-04.jpg" />
+                                                </div>
+                                                <div data-p="144.50" style="display: none;">
+                                                    <img data-u="image" src="img/05.jpg" />
+                                                    <img data-u="thumb" src="img/thumb-05.jpg" />
+                                                </div>
+                                                <div data-p="144.50" style="display: none;">
+                                                    <img data-u="image" src="img/06.jpg" />
+                                                    <img data-u="thumb" src="img/thumb-06.jpg" />
+                                                </div>
+                                                <div data-p="144.50" style="display: none;">
+                                                    <img data-u="image" src="img/07.jpg" />
+                                                    <img data-u="thumb" src="img/thumb-07.jpg" />
+                                                </div>
+                                                <div data-p="144.50" style="display: none;">
+                                                    <img data-u="image" src="img/08.jpg" />
+                                                    <img data-u="thumb" src="img/thumb-08.jpg" />
+                                                </div>
+                                                <div data-p="144.50" style="display: none;">
+                                                    <img data-u="image" src="img/09.jpg" />
+                                                    <img data-u="thumb" src="img/thumb-09.jpg" />
+                                                </div>
+                                                <div data-p="144.50" style="display: none;">
+                                                    <img data-u="image" src="img/10.jpg" />
+                                                    <img data-u="thumb" src="img/thumb-10.jpg" />
+                                                </div>
+                                                <div data-p="144.50" style="display: none;">
+                                                    <img data-u="image" src="img/11.jpg" />
+                                                    <img data-u="thumb" src="img/thumb-11.jpg" />
+                                                </div>
+                                                <div data-p="144.50" style="display: none;">
+                                                    <img data-u="image" src="img/12.jpg" />
+                                                    <img data-u="thumb" src="img/thumb-12.jpg" />
+                                                </div>
+                                            </div>
+                                            <!-- Thumbnail Navigator -->
+                                            <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
+                                                <!-- Thumbnail Item Skin Begin -->
+                                                <div data-u="slides" style="cursor: default;">
+                                                    <div data-u="prototype" class="p">
+                                                        <div class="w">
+                                                            <div data-u="thumbnailtemplate" class="t"></div>
+                                                        </div>
+                                                        <div class="c"></div>
+                                                    </div>
+                                                </div>
+                                                <!-- Thumbnail Item Skin End -->
+                                            </div>
+                                            <!-- Arrow Navigator -->
+                                            <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>
+                                            <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
+                                        </div>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                    <div class="container">
+                                      <div class="col-sm-10">
+                                          <h3><span class="secicon fa fa-user"></span>Keterangan Lainnya</h3>
+                                          <p>Nullam dapibus vehicula condimentum. Curabitur elit enim, accumsan vitae tristique ut, mollis at orci. Fusce cursus interdum neque nec aliquam. Proin turpis leo, laoreet non ultricies non, dictum nec nulla. Duis vitae nisi eu odio Adipiscing elit. Nullam dapibus vehicula condimentum. Curabitur elit enim, accumsan.</p>
 
-                      <p>Consectetur adipisicing elit. Hic labore, unde, ratione, itaque ducimus provident error similique qui, recusandae nam dignissimos autem. Sequi quas quis non, odit assumenda similique neque.</p>
+                                          <p>Consectetur adipisicing elit. Hic labore, unde, ratione, itaque ducimus provident error similique qui, recusandae nam dignissimos autem. Sequi quas quis non, odit assumenda similique neque.</p>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                    <div class="container">
+                                      <div class="col-sm-10">
+                                          <h3><span class="secicon fa fa-user"></span>Kisaran Harga</h3>
+                                          <p>Rp 200.000, 00 - Rp 1000.000, 00</p>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="tab2success">Success 2</div>
+                              <div class="tab-pane fade" id="tab3success">Success 3</div>
+                          </div>
+                      </div>
                   </div>
+                </div>
               </div>
             </div>
-            <div class="row">
-                <div class="container">
-                  <div class="col-sm-10">
-                      <h3><span class="secicon fa fa-user"></span>Kisaran Harga</h3>
-                      <p>Rp 200.000, 00 - Rp 1000.000, 00</p>
-                  </div>
-              </div>
-            </div>
+
             <div class = "row">
               <div class="container">
-                  <div class="col-sm-10 text-align-left">
+                  <div class="col-sm-11 text-align-left">
                     <h3><span class="secicon fa fa-user"></span>Review</h3>
                       <div class="well transparent">
                         <div class="input-group">
@@ -483,7 +537,7 @@
           $(window).scroll(function(){ // scroll event
             var windowTop = $(window).scrollTop(); // returns number
             if (stickyTop < windowTop){
-              $('.sticky').css({ position: 'fixed', top: 60 });
+              $('.sticky').css({ position: 'fixed', top: 60, zIndex : 99999 });
             }
             else {
               $('.sticky').css('position','static');

@@ -10,7 +10,6 @@ gulp.task('vendor', function() {
   return gulp.src([
     'public/js/jquery.js',
     'public/js/bootstrap.min.js',
-    'public/js/evenfly.js',
     'public/js/jquery.nicescroll.min.js',
     'public/js/jquery.easing.min.js',
     'public/js/jquery.fittext.js',

@@ -67,6 +67,10 @@
     margin-left: 60px !important;
 }
 
+.margin-right-10{
+    margin-right: 10px !important;
+}
+
 .margin-right-20{
     margin-right: 20px !important;
 }
@@ -192,4 +196,8 @@
 
 .min-height{
   min-height: 555px !important;
+}
+
+.colored-border-bottom{
+  border-bottom:2px solid #f05f40;
 }

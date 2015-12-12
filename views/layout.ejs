@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Passport-Facebook Example</title>
+	</head>
+	<body>
+		<% if (!user) { %>
+			<p>
+			<a href="/index-facebook">Home</a> | 
+			<a href="/login-facebook">Log In</a>
+			</p>
+		<% } else { %>
+			<p>
+			<a href="/index-facebook">Home</a> | 
+			<a href="/account-facebook">Account</a> | 
+			<a href="/logout-facebook">Log Out</a>
+			</p>
+		<% } %>
+		<%- body %>
+	</body>
+</html>
